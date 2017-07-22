@@ -1,0 +1,65 @@
+@mixin clearfix {
+  &:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+@function em($pxval, $base: $root-font-size) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  $base: $root-font-size;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+@function lineheight($value, $divider: $root-font-size) {
+  @return $value / $divider;
+}
+
+@mixin bgfull($posLeft: 50%, $posTop: 50%) {
+  background-repeat: no-repeat;
+  background-position: $posLeft $posTop;
+  background-size: cover;
+}
+
+@mixin placeholder($color: inherit) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

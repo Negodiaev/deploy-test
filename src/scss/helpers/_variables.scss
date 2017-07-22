@@ -1,0 +1,36 @@
+//Typography
+$root-font-size: 14px; //font-size for html element
+$font-size: 1rem;      //font-size for body element
+$line-height: 1.5;
+$font-family: 'Open Sans', Helvetica, sans-serif;
+
+$font-weight-light:    300;
+$font-weight-normal:   400;
+$font-weight-semibold: 600;
+$font-weight-bold:     700;
+$font-weight-black:    900;
+
+//Default colors
+$color-primary: #181817;
+$color-secondary: #ffce76;
+$color-decor: #dd9c27;
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #6d6d6d;
+$color-dark-gray: #454545;
+$color-light-gray: #909090;
+
+//Main colors
+$color-text: $color-black;
+$color-background: #f9fafc;
+$color-link: #fefefe;
+$color-link-hover: $color-secondary;
+$color-border-dark: $color-primary;
+$color-border-light: $color-white;
+$color-border-decor: $color-secondary;
+
+//Custom colors
+
+
+//layout
+$footer-height: 200px / $root-font-size * 1em;
