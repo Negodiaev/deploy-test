@@ -1,0 +1,90 @@
+Arguments: 
+  F:\Programs\node.exe C:\Users\Working\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @babel/types --dev
+
+PATH: 
+  C:\Program Files\Cmder\bin;C:\Program Files\Git\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\share\vim\vim74;C:\Program Files\Cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\Cmder\vendor\conemu-maximus5;C:\Program Files\Cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;F:\Programs\Ruby24-x64\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\PC Connectivity Solution\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\AOMEI Backupper;F:\Programs\;C:\Program Files\Microsoft VS Code\bin;F:\Programs\jruby-9.1.14.0\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Working\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Program Files (x86)\heroku\bin;C:\Program Files\Cmder
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+      "name": "deploy-test",
+      "version": "1.0.0",
+      "description": "Testing deploy a website on gh-pages",
+      "main": "main.js",
+      "directories": {
+          "doc": "docs"
+      },
+      "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "repository": {
+          "type": "git",
+          "url": "git+https://github.com/Negodiaev/deployTest.git"
+      },
+      "keywords": [
+          "test",
+          "deploy",
+          "gh-pages"
+      ],
+      "author": "Alex",
+      "license": "ISC",
+      "bugs": {
+          "url": "https://github.com/Negodiaev/deployTest/issues"
+      },
+      "homepage": "https://github.com/Negodiaev/deployTest#readme",
+      "devDependencies": {
+          "autoprefixer": "^9.4.10",
+          "babel-cli": "^6.24.1",
+          "babel-core": "^6.25.0",
+          "babel-preset-es2015": "^6.24.1",
+          "babel-register": "^6.24.1",
+          "browser-sync": "^2.18.13",
+          "cssnext": "^1.8.4",
+          "gulp": "^4.0.0",
+          "gulp-babel": "^8.0.0",
+          "gulp-cli": "^2.0.1",
+          "gulp-csslint": "^1.0.0",
+          "gulp-csso": "^3.0.0",
+          "gulp-eslint": "^5.0.0",
+          "gulp-imagemin": "^5.0.3",
+          "gulp-postcss": "^8.0.0",
+          "gulp-pug": "^4.0.1",
+          "gulp-sass": "^4.0.2",
+          "gulp-sourcemaps": "^2.6.0",
+          "gulp-uglify": "^3.0.0",
+          "gulp-uncss": "^1.0.6",
+          "gulp-watch": "^5.0.1",
+          "imagemin-jpegtran": "^6.0.0",
+          "imagemin-optipng": "^6.0.0",
+          "imagemin-svgo": "^7.0.0",
+          "pump": "^3.0.0",
+          "rimraf": "^2.6.1"
+      },
+      "eslintIgnore": [
+          "src/js/html5.js",
+          "src/js/jquery.js",
+          "src/js/library.js",
+          "src/js/respond.js",
+          "src/js/retina.js"
+      ],
+      "dependencies": {
+          "@babel/preset-env": "^7.3.4"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, scandir 'F:\Users\Working\Freelance\WebDev\GitHub\boilerplates\deployTest\node_modules\@types'
